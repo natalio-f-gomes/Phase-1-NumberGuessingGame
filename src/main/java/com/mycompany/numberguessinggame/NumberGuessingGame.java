@@ -9,6 +9,7 @@ import java.util.Random;
 /**
  *
  * @author nataliogomes
+ * This program was 100% written by the @author
  */
 public class NumberGuessingGame {
 
@@ -22,8 +23,8 @@ public class NumberGuessingGame {
        int userChoice = scanner.nextInt();
        scanner.nextLine();
        switch(userChoice){
-           case 1: humanGuess(scanner);
-           case 2: computerGuess(scanner);
+           case 1: humanGuess(scanner); break;
+           case 2: computerGuess(scanner); break;
            case 3: break;
            default: System.out.println("Invalid Option"); break;
        } 
@@ -49,7 +50,7 @@ public class NumberGuessingGame {
                     System.out.println("Congratulations. You guessed the correct number in " + guesses + " guesses");
                     break;
                 }
-                scanner.nextLine();
+                
             }catch(Exception e){
                 System.out.println(e);
                 break;
